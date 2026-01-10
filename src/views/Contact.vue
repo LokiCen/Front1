@@ -124,13 +124,13 @@ onMounted(() => {
 }
 
 a {
-  color: white;
+  color: #191919;
   text-decoration: none;
 }
 
 /* 鼠标悬停时改变颜色 */
 a:hover {
-  color: #353535;
+  color: #4a5c6a;
   /* 改为你想要的颜色，例如蓝色 */
 }
 
@@ -171,10 +171,7 @@ body {
 
 .main .card {
   border-radius: 18px;
-  background-color: rgba(0, 0, 0, 0.2);
-  /* 半透明背景 */
-  backdrop-filter: blur(8px);
-  /* 毛玻璃效果 */
+
   border: 1px solid rgba(255, 255, 255, 0.15);
   /* 半透明边框 */
   height: auto;
@@ -182,11 +179,12 @@ body {
   padding: 30px 40px;
   /* 调整内边距 */
   width: 60%;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   /* 增强阴影效果 */
   transition: all 0.3s ease;
   /* 添加过渡效果 */
+  background-color: rgba(6,20,27,0.3);
 }
 
 .main .card:hover {
@@ -215,20 +213,20 @@ body {
 
 .main .card td:first-child {
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.95);
+  color: rgba(25,25,25, 0.95);
   width: 120px;
   /* 固定第一列宽度 */
 }
 
 .main .card td:nth-child(2) {
   padding: 0 10px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(25,25,25, 0.7);
   width: 10px;
   /* 冒号列宽度 */
 }
 
 .main .card td:nth-child(3) {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(25,25,25, 0.85);
   padding-left: 15px;
   font-weight: 400;
 }

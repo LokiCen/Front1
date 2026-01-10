@@ -639,7 +639,7 @@ onMounted(() => {
   flex-direction: row;
   align-items: center;
   font-size: 16px;
-  color: #ffffffd0;
+  color:#191919;
   transition: all 0.3s ease; /* 添加过渡效果 */
   cursor: pointer; /* 鼠标悬停时显示手型指针 */
 }
@@ -681,10 +681,11 @@ onMounted(() => {
 }
 
 .message {
-  background: rgba(173, 216, 230, 0.5);
+  background: rgba(255,255,255, 0.2);
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
 }
 
 .message-header {
@@ -701,12 +702,12 @@ onMounted(() => {
 }
 
 .message-time {
-  color: #ccc;
+  color: #191919;
   font-size: 12px;
 }
 
 .message-content {
-  color: #fff;
+  color: #191919;
   white-space: pre-wrap;
   font-family: "Consolas", monospace;
   gap: 0px;

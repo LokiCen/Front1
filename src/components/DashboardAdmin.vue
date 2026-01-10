@@ -164,6 +164,7 @@ main {
   padding: 12px 0 20px;
   overflow: hidden;
   font-family: inherit;
+  background-color: rgba(0,0,0,0.1);
 }
 
 .user-info img {
@@ -172,7 +173,7 @@ main {
 }
 
 .user-info p {
-  color: #fff;
+  color: #191919;
   font-size: clamp(1rem, 2.5vw, 1.4rem);
   /* 动态字体大小 */
   font-weight: 500;
@@ -191,7 +192,7 @@ main {
   /* 垂直居中 */
   justify-content: flex-start;
   /* 左对齐 */
-  color: #fff;
+  color: #191919;
   font-size: 1rem;
   padding: 16px 20px;
   margin: 0 8px;
@@ -202,7 +203,7 @@ main {
 
 
 .nav-item.active a {
-  background: rgba(106, 109, 155, 0.5);
+  background: rgba(17,33,45, 0.2);
   /* 激活菜单项背景色 */
   text-decoration: none;
 }
@@ -220,7 +221,7 @@ main {
 
 /* 图标默认颜色 */
 .nav-icon {
-  color: #ffffffd0;
+  color: #11212d;
   /* 默认颜色（浅白） */
   transition: color 0.3s ease;
   /* 平滑过渡 */
@@ -228,7 +229,7 @@ main {
 
 /* 鼠标悬停菜单项时图标变色 */
 .nav-item a:hover .nav-icon {
-  color: #3e3e5f;
+  color: #4a5c6a;
   /* 悬停时颜色 */
 }
 
@@ -275,7 +276,7 @@ main {
 /* 左侧内容样式 */
 .left-content {
   padding: 10px 30px;
-  color: #e5e5e5;
+  color: #191919;
 }
 
 /* 媒体查询样式，适配不同屏幕宽度 */

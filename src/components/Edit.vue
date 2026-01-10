@@ -127,6 +127,9 @@ const api = {
 const submitForm = async () => {
   if (form.value.password !== form.value.rePassword) {
     alert("Passwords do not match");
+    const reloadPage = () => {
+      window.location.reload();
+    };
     return;
   }
 

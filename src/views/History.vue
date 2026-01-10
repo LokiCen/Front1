@@ -282,7 +282,7 @@ const formatTime = (timeString) => {
 }
 
 .history-item {
-  background-color: rgba(240, 240, 255, 0.2);
+  background-color: rgba(255,255,255, 0.5);
   /* 原本是 rgba(46, 49, 64, 0.5) */
   border: 1px solid rgba(180, 180, 200, 0.4);
   border-radius: 8px;
@@ -330,7 +330,7 @@ const formatTime = (timeString) => {
 
 .history-time {
   font-size: 0.8rem;
-  color: rgba(211, 211, 211, 0.7);
+  color: rgba(25,25,25, 0.7);
 }
 
 .history-item-actions {
@@ -381,7 +381,7 @@ const formatTime = (timeString) => {
 
 .modal-content {
   background-color: rgba(26, 28, 45, 0.8);
-  color: #e0e0e0;
+  color: #191919;
   border-radius: 10px;
   width: 60%;
   max-width: 800px;
@@ -401,7 +401,7 @@ const formatTime = (timeString) => {
 
 .modal-header h3 {
   margin: 0;
-  color: #ffffff;
+  color: #191919;
 }
 
 .close-btn {

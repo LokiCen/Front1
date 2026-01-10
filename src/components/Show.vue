@@ -78,12 +78,11 @@ main {
   width: min(50vw, 600px);
   margin-left: 3rem;
   font: 400 0.85rem helvetica, sans-serif;
-  color: white;
+  color: #11212d;
   text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
   padding: 2rem;
   text-align: left;
   background-color: rgba(255, 255, 255, 0.1); /* 半透明背景 */
-  backdrop-filter: blur(5px); /* 背景模糊效果 */
   border-radius: 15px; /* 圆角 */
 
   /* 3D立体效果 */
@@ -110,7 +109,6 @@ main {
   & .description {
     line-height: 1.7;
     font-size: 1.2rem;
-    transform: translateZ(20px); /* 增强3D效果 */
   }
 
   /* 悬停效果 */

@@ -440,7 +440,7 @@ onMounted(() => {
   margin-right: 15px;
   padding: 8px 16px;
   background-color: #2e3140;
-  color: white;
+  color: #191919;
   border: none;
   border-radius: 5px;
   padding: 5px 10px;
@@ -518,7 +518,7 @@ onMounted(() => {
   flex-direction: row;
   align-items: center;
   font-size: 16px;
-  color: #ffffffd0;
+  color: #191919;
   transition: all 0.3s ease; /* 添加过渡效果 */
   cursor: pointer; /* 鼠标悬停时显示手型指针 */
 }
@@ -540,8 +540,8 @@ onMounted(() => {
 
 .question-button {
   background-color: rgba(30, 30, 63, 0.2);
-  border: 1px solid rgba(84, 83, 83, 0.5);
-  color: rgba(230,230,230, 1);
+  border: 1px solid rgba(155,168,171, 0.5);
+  color: #191919;
   padding: 10px 10px;
   border-radius: 25px;
   cursor: pointer;
@@ -568,10 +568,11 @@ onMounted(() => {
 }
 
 .message {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   padding: 10px;
   margin-bottom: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影效果 */
 }
 
 .message-header {

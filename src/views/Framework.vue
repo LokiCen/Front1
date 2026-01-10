@@ -61,7 +61,7 @@ body {
   /* 去除默认的外边距 */
   font-family: "Montserrat", sans-serif;
   /* 设置字体为 Montserrat */
-  color: #d3d3d3;
+  color: #191919;
   /* 设置文本颜色 */
   display: flex;
   /* 设置为弹性布局 */

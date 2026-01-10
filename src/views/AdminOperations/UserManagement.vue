@@ -254,7 +254,7 @@ onMounted(() => {
 
 <style scoped>
 .main-content h2 {
-  color: #ffffff;
+  color: #191919;
   /* 设置为白色 */
   font-size: 26px;
   /* 字体大小可根据需要调整 */
@@ -267,7 +267,7 @@ onMounted(() => {
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
-  color: #d3d3d3;
+  color: #191919;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -304,15 +304,16 @@ body {
   margin-bottom: 20px;
   padding: 20px 25px 20px 25px;
   width: 90%;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0,0,0, 0.8);
   overflow-y: auto;
   /* ⚠️ 关键部分，启用垂直滚动 */
   max-height: 600px;
   /* 设置最大高度，防止无限撑开 */
+  background-color: rgba(25,25,25,0.05);
 }
 
 .user-table th {
-  background-color: rgba(106, 109, 155, 0.5);
+  background-color: rgba(106, 109, 155, 0.7);
   text-align: center;
 }
 
@@ -321,7 +322,7 @@ body {
 }
 
 .user-table th {
-  background-color: rgba(106, 109, 155, 0.5);
+  background-color: rgba(106, 109, 155, 0.7);
   text-align: center;
   padding: 15px 10px;
   /* 根据需要调整 */
@@ -340,6 +341,7 @@ body {
   /* 减小内容行的行高 */
   min-height: 25px;
   /* 设置最小行高 */
+  background-color: rgba(25,25,25,0.05);
 }
 
 .user-table button {
@@ -349,8 +351,8 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: #fff;
-  background-color: #0dbe83;
+  color: #191919;
+  background-color: #9ba8ab;
   width: 45%;
   height: 36px;
   /* 设置按钮高度 */
@@ -366,7 +368,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background-color: rgba(106, 109, 155, 0.2);
-  color: #ffffff;
+  color: #191919;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -385,7 +387,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 8px;
   background-color: rgba(106, 109, 155, 0.2);
-  color: #ffffff;
+  color: #191919;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -405,7 +407,7 @@ body {
 .user-table option {
   background-color: rgba(106, 109, 155, 0.5);
   /* 新的下拉菜单背景 */
-  color: #fff;
+  color: #191919;
 }
 
 .user-role-select:focus {
@@ -416,11 +418,11 @@ body {
 
 .user-role-select option {
   background-color: rgba(106, 109, 155, 0.5);
-  color: #fff;
+  color: #191919;
 }
 
 .user-table button:hover {
-  background-color: #0dbe83;
+  background-color: #4a5c6a;
 }
 
 .user-table button:active {
@@ -438,7 +440,7 @@ body {
   border-radius: 3px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(106, 109, 155, 0.1);
-  color: #fff;
+  color: #191919;
 }
 
 .user-table th:nth-child(3),
@@ -460,7 +462,7 @@ body {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(25, 25, 25, 0.6);
   font-size: 16px;
   pointer-events: none;
 }
@@ -473,7 +475,7 @@ body {
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(106, 109, 155, 0.2);
-  color: #fff;
+  color: #191919;
 }
 
 .pagination {
@@ -494,8 +496,8 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  color: #fff;
-  background-color: #0dbe83;
+  color: #191919;
+  background-color: #9ba8ab;
 }
 
 .pagination button:disabled {
@@ -503,7 +505,7 @@ body {
 }
 
 .pagination span {
-  color: #fff;
+  color: #191919;
   font-size: 16px;
 }
 
@@ -519,7 +521,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   background-color: rgba(106, 109, 155, 0.2);
-  color: #ffffff;
+  color: #191919;
   min-width: 80px;
 }
 

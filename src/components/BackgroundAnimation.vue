@@ -103,7 +103,7 @@ const showTitle = ref(false); // 新增：用于控制标题和副标题的显�
 .typing-container {
   position: absolute;
   font-family: "Courier New", Courier, monospace; /* 使用等宽字体 */
-  color: #ffffff; /* 打字文本颜色 */
+  color: #191919; /* 打字文本颜色 */
   font-size: 24px; /* 字体大小 */
   z-index: -1; /* 确保打字效果层在背景之上但在内容层下方 */
 }

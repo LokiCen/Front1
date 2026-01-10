@@ -118,7 +118,7 @@ const drawSearchTypePie = async () => {
           top: -5,
           left: "left",
           textStyle: {
-            color: "#fff"
+            color: "#191919"
           }
         },
         series: [
@@ -136,7 +136,7 @@ const drawSearchTypePie = async () => {
               }
             },
             label: {
-              color: "#fff"
+              color: "#191919"
             }
           }
         ]
@@ -168,12 +168,12 @@ const drawSearchTrendLine = async () => {
         xAxis: {
           type: 'category',
           data: xData,
-          axisLabel: { color: '#fff' },
-          axisLine: { lineStyle: { color: '#999' } }
+          axisLabel: { color: '#191919' },
+          axisLine: { lineStyle: { color: '#191919' } }
         },
         yAxis: {
           type: 'value',
-          axisLabel: { color: '#fff' },
+          axisLabel: { color: '#191919' },
           axisLine: { lineStyle: { color: '#999' } },
           splitLine: { lineStyle: { color: '#444' } }
         },
@@ -250,7 +250,7 @@ onMounted(async () => {
 
 <style scoped>
 .main-content h2 {
-  color: #ffffff;
+  color: #191919;
   /* 设置为白色 */
   font-size: 26px;
   /* 字体大小可根据需要调整 */
@@ -262,14 +262,14 @@ onMounted(async () => {
 
 .visualization-page {
   padding: 20px 30px;
-  color: #e5e5e5;
+  color: #191919;
 }
 
 .title {
   text-align: center;
   margin-bottom: 20px;
   font-size: 1.6rem;
-  color: #fff;
+  color: #191919;
 }
 
 .grid-container {
@@ -300,7 +300,7 @@ onMounted(async () => {
 
 .chart-title {
   text-align: center;
-  color: #fff;
+  color: #191919;
   margin-bottom: 10px;
 }
 

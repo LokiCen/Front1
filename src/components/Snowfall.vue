@@ -1,6 +1,6 @@
 <template>
   <!-- 背景层（单独图层），使用SVG图片作为背景 -->
-  <img class="background-layer" src="../assets/background.svg" alt="background" />
+  <img class="background-layer" src="../assets/background.jpg" alt="background" />
 
   <!-- 雪花层（单独图层），使用canvas标签绘制雪花效果 -->
   <canvas ref="canvas" class="snow-layer"></canvas>
@@ -149,7 +149,7 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1; /* 确保背景层在主内容下方 */
+  z-index: 0; /* 确保背景层在主内容下方 */
   object-fit: cover; /* 确保背景图片按比例缩放填满整个背景层 */
   pointer-events: none; /* 确保背景层不影响页面交互 */
 }
@@ -161,7 +161,7 @@ export default {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0; /* 确保雪花层在背景层上方，主内容下方 */
+  z-index: -1; /* 确保雪花层在背景层上方，主内容下方 */
   pointer-events: none; /* 确保雪花层不影响页面交互 */
   background-color: transparent; /* 设置背景为透明，使雪花可以覆盖在背景图上 */
 }

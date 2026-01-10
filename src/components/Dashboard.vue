@@ -218,8 +218,6 @@ main {
   height: 100vh; /* 高度填满视口 */
   margin: 0px;
   background: transparent;
-  backdrop-filter: blur(10px); /* 背景模糊效果 */
-  -webkit-backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5); /* 边框颜色和透明度 */
   border-radius: 15px; /* 圆角边框 */
   box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
@@ -236,6 +234,7 @@ main {
   padding: 12px 0 20px;
   overflow: hidden;
   font-family: inherit;
+  background-color: rgba(0,0,0,0.1);
 }
 
 
@@ -248,7 +247,7 @@ main {
 }
 
 .user-info p {
-  color: #fff;
+  color: #191919;
   font-size: clamp(0.8rem, 5vw, 1.5rem); /* 动态字体大小 */
   font-weight: 500;
   text-align: center;
@@ -281,7 +280,7 @@ main {
 
 /* 悬停状态 */
 .fa-pen-to-square.nav-icon:hover {
-  color: #ffffffd0;   /* 悬停时颜色 */
+  color: #11212d;   /* 悬停时颜色 */
   transform: scale(1.1); /* 轻微放大（可选） */
   cursor: pointer;     /* 鼠标指针 */
 }
@@ -294,7 +293,7 @@ main {
   display: flex;
   align-items: center; /* 垂直居中 */
   justify-content: flex-start; /* 左对齐 */
-  color: #fff;
+  color: #191919;
   font-size: 1rem;
   padding: 16px 20px; /* 增加左右内边距 */
   margin: 0 8px;
@@ -304,15 +303,15 @@ main {
 
 .nav-item a i {
   display: -ms-inline-flexbox;
-  color: #ffffffd0; /* 图标颜色 */
+  color: #11212d; /* 图标颜色 */
 }
 
 .nav-item a i:hover {
-  color: #3e3e5f; /* 图标悬停颜色 */
+  color: #4a5c6a; /* 图标悬停颜色 */
 }
 
 .nav-item.active a {
-  background: rgba(106, 109, 155, 0.5); /* 活动菜单项背景色 */
+  background: rgba(17,33,45, 0.2); /* 活动菜单项背景色 */
   text-decoration: none;
 }
 
@@ -324,7 +323,7 @@ main {
   display: flex;
   align-items: center; /* 垂直居中 */
   justify-content: flex-start; /* 左对齐 */
-  color: #fff;
+  color: #191919;
   font-size: 1rem;
   padding: 16px 20px; /* 增加左右内边距 */
   margin: 0 8px;
@@ -334,15 +333,15 @@ main {
 
 .nav-item1 a i {
   display: -ms-inline-flexbox;
-  color: #3e3e5f; /* 图标颜色 */
+  color: #11212d; /* 图标颜色 */
 }
 
 .nav-item1 a i:hover {
-  color: #ffffffd0; /* 图标悬停颜色 */
+  color: #4a5c6a; /* 图标悬停颜色 */
 }
 
 .nav-item1.active a {
-  background: rgba(106, 109, 155, 0.5); /* 活动菜单项背景色 */
+  background: rgba(17,33,45, 0.5); /* 活动菜单项背景色 */
   text-decoration: none;
 }
 
@@ -387,7 +386,7 @@ main {
 /* 左侧内容样式 */
 .left-content {
   padding: 10px 30px;
-  color: #e5e5e5;
+  color: #191919;
 }
 
 /* 媒体查询样式，适配不同屏幕宽度 */

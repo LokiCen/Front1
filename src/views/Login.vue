@@ -6,7 +6,7 @@
       <el-form class="login-register" :model="formData" :rules="rules" ref="formDataRef" @submit.prevent>
         <div class="login-title">
           <img src="@/assets/favicon.svg" alt="My Icon" class="login-icon" />
-          LoveIT -- Retrieval System
+          Login
         </div>
 
         <!-- 登录 -->
@@ -102,14 +102,25 @@
         </el-form-item>
 
         <el-form-item v-if="opType == 0">
-          <a href="javascript:void(0)" class="a-link" @click="showPanel(1)">Already have an account?</a>
+          <a href="javascript:void(0)" class="a-link already-have-account-link" @click="showPanel(1)">Already have an account?</a>
         </el-form-item>
 
         <el-form-item v-if="opType == 2">
-          <a href="javascript:void(0)" class="a-link" @click="showPanel(1)">Go to login?</a>
+          <a href="javascript:void(0)" class="a-link go-to-login-link" @click="showPanel(1)">Go to login?</a>
         </el-form-item>
       </el-form>
     </div>
+
+    <!-- 左侧文本内容 -->
+    <div class="left-text">
+      <div class="left-title">
+        LoveIT——System
+      </div>
+      <div class="left-description">
+        Our advanced platform leverages cutting-edge multimodal AI to deliver precise image-text matching. By combining deep learning architectures with semantic analysis, we enable highly accurate cross-modal search capabilities.
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -471,16 +482,20 @@ const handleResetPassword = async (params) => {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  position: relative; /* 确保子元素可以绝对定位 */
 }
 
 .login-panel {
   width: 400px;
-  margin: calc((100vh - 500px) / 2) auto;
+  position: absolute;
+  right: calc((100vw - 400px) / 4);
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .login-register {
   padding: 25px;
-  background-color: rgba(26, 28, 45, 0.35);
+  background-color: rgba(215,220,221, 0.5);
   border: 1px solid rgba(202, 202, 208, 0.35);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -488,7 +503,7 @@ const handleResetPassword = async (params) => {
 
 .form-item {
   border: 1px solid #333;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: #2b2e3e;
   color: #191919;
 }
@@ -502,8 +517,8 @@ const handleResetPassword = async (params) => {
 }
 
 .login-icon {
-  width: 48px; // 放大图标
-  height: 48px;
+  width: 50px; // 放大图标
+  height: 50px;
   margin-right: 12px; // 图标与文字之间的距离
   transform: translateX(-8px); // 向左偏移图标
 }
@@ -522,10 +537,25 @@ const handleResetPassword = async (params) => {
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  .a-link {
+    color: #191919; /* 修改文字颜色 */
+    &:hover {
+      color: #409eff; /* 悬停时的文字颜色变化 */
+    }
+  }
 }
 
 .op-btn {
   width: 100%;
+}
+
+.already-have-account-link,
+.go-to-login-link {
+  color: #191919; /* 修改文字颜色 */
+  &:hover {
+    color: #409eff; /* 悬停时的文字颜色变化 */
+  }
 }
 
 .button-panel {
@@ -580,12 +610,12 @@ const handleResetPassword = async (params) => {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('@/assets/background2.svg'); /* 替换为您的图片路径 */
+  background-image: url('@/assets/background2 .png'); /* 替换为您的图片路径 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: -1; /* 确保在内容下方 */
-  opacity: 0.7; /* 适当透明度，确保文字可读 */
+  opacity: 1; /* 适当透明度，确保文字可读 */
 }
 
 img {
@@ -593,4 +623,26 @@ img {
   margin-left: 10px;
   width: 20px;
 }
+.left-text {
+  position: absolute;
+  left: 80px; /* 距离右侧100px */
+  top: 30%;
+  transform: translateY(-50%);
+  color: #191919; /* 文字颜色 */
+  z-index: 1; /* 确保在背景图片上方 */
+}
+
+.left-title {
+  font-size: 56px; /* 标题字体大小 */
+  margin-bottom: 50px; /* 标题与描述之间的间距 */
+  font-weight: bold; /* 字体加粗 */
+  font-family: 'Lucida Handwriting', cursive; /* 英文花体字 */
+}
+
+.left-description {
+  width:700px;
+  font-size: 16px; /* 描述字体大小 */
+  font-family: 'Yu Gothic UI', cursive; /* 英文花体字 */
+}
+
 </style>
